@@ -1,5 +1,8 @@
 {
     "name":"awiggs.ca-source",
     "version": 2,
-    "alias": "www.awiggs.ca"
+    "alias": [
+        "www.awiggs.ca",
+        "awiggs.ca"
+    ]
 }
