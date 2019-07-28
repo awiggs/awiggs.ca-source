@@ -1,0 +1,49 @@
+.logo-svg {
+    width: 50vh;
+    height: 50vh;
+
+    @media screen and (max-width: 768px) {
+        width: 35vh;
+        height: 35vh;
+    }
+
+    path {
+        fill: $primary-logo;
+        // animation: trace-logo-r 2s linear backwards;
+    }
+
+    // path:hover {
+    //     stroke: $primary-dark;
+    //     stroke-width: 30px;
+    //     stroke-dasharray: 47824px;
+    //     stroke-dashoffset: 47824px;
+    //     animation: trace-logo-f 2s linear forwards;
+    // }
+}
+
+  
+// @keyframes trace-logo-f {
+//     from {
+//         stroke-dashoffset: 47824px;
+//         stroke-dasharray: 47824px;
+//         stroke-width: 30px;
+//     }
+
+//     to {
+//         stroke-dashoffset: 0;
+//         stroke-width: 30px;
+//     }
+// }
+
+// @keyframes trace-logo-r {
+//     from {
+//         stroke-dashoffset: 0;
+//         stroke-width: 30px;
+//     }
+
+//     to {
+//         stroke-dashoffset: 47824px;
+//         stroke-width: 30px;
+//         stroke-dasharray: 47824px;
+//     }
+// }

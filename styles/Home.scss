@@ -1,0 +1,54 @@
+.row {
+    margin-top: 10vh;
+}
+
+.right-col {
+    margin-top: 10vh;
+    text-align: center;
+
+    h1 {
+        font-family: 'Sacramento', serif;
+        font-size: 3.5rem;
+        line-height: 2em;
+    }
+
+    .home-resume-btn {
+        background: transparent;
+        border: solid 2px $social-icon;
+        padding: 7px 13px 7px 13px;
+        margin-top: 2.5vh;
+
+        i {
+            padding-right: 7px;
+        }
+    }
+}
+
+.left-col {
+    .home-logo {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .row,
+    .left-col,
+    .right-col {
+        margin: 0 auto;
+        margin-bottom: 5vh;
+    }
+
+    .right-col {
+        h1 {
+            line-height: 1.3em;
+        }
+    }
+
+    .left-col {
+        .home-logo {
+            height: 300px;
+            width: 300px;
+        }
+    }
+}

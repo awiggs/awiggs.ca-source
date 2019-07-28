@@ -1,0 +1,46 @@
+// Social Icons
+.sm {
+    font-size: 17pt;
+    margin: 0 2vh 0 2vh;
+    transition: all .2s ease-out;
+}
+
+.sm:hover {
+    color: $primary-logo;
+    transition: all .2s ease-in;
+}
+
+.soc-wrapper {
+    display: flex;
+    justify-content: center;
+    bottom: 25px;
+    position: fixed;
+    width: 100%;
+
+    a {
+        color: $social-icon;
+    }
+}
+
+.soc-icons {
+    margin-right: 80%;
+}
+
+.icon-text {
+    display: inline;
+}
+
+@media screen and (max-width: 1024px) {
+    .soc-wrapper {
+        bottom: 0;
+        width: 70%;
+    }
+    
+    .soc-location {
+        display: none;
+    }
+
+    .soc-icons {
+        margin: 0 auto;
+    }
+}

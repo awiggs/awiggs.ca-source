@@ -1,13 +1,24 @@
 {
-  "name": "create-next-example-app",
+  "name": "awiggs.ca-source",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "^9.0.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@mdx-js/loader": "^1.1.0",
+    "@next/mdx": "^9.0.2",
+    "@zeit/next-sass": "^1.0.1",
+    "hamburgers": "^1.1.3",
+    "next": "9.0.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.38.0"
   }
 }

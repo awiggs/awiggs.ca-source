@@ -1,0 +1,31 @@
+.header {
+    background: $background;
+    z-index: 1020;
+}
+
+.nav-item a {
+    font-size: 1.1rem;
+    color: $social-icon !important;
+}
+
+.nav-item a:hover {
+    color: $primary-logo !important;
+}
+
+#hamburger-icon:focus,
+#hamburger-icon:hover {
+    outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-brand-two {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .nav-item {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+}
