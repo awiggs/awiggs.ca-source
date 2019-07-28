@@ -2,7 +2,7 @@
 import Boot from '../components/Boot'
 import Navbar from '../components/Navbar'
 import Socials from '../components/Socials'
-import Content from '../pages/index.mdx'
+import Content from '../content/index.mdx'
 
 export default ({ pageName }) => {
     return (
