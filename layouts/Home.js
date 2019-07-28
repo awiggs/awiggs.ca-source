@@ -13,7 +13,7 @@ export default ({ pageName }) => {
                 <div className='container'>
                     <div className='row'>
                         <div className='col left-col'>
-                            <img src='/static/svg/chipgr8-mono.svg' className='home-logo' />
+                            <img src='/static/Logo.png' className='home-logo' />
                         </div>
                         <div className='col right-col'>
                             <Content />
