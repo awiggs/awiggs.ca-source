@@ -20,10 +20,15 @@
     a {
         color: $social-icon;
     }
-}
 
-.soc-icons {
-    margin-right: 77%;
+    .soc-icons {
+        display: flex;
+        width: 80%;
+    }
+    
+    .soc-location {
+        display: flex;
+    }
 }
 
 .icon-text {
