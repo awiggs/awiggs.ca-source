@@ -1,30 +1,24 @@
 // Components
 import Boot from '../components/Boot'
-import Image from '../components/Image'
 import Navbar from '../components/Navbar'
 import Socials from '../components/Socials'
-import Content from '../content/index.mdx'
+import Content from '../content/work.mdx'
 
 export default ({ pageName }) => {
     return (
         <>
             <Boot title={pageName}/>
-            <div className='page home'>
+            <div className='page work'>
                 <Navbar />
                 <div className='container'>
                     <div className='row'>
-                        <div className='col left-col'>
-                            <Image 
-                                src={`/static/Logo.png`}
-                                className={`home-logo`}
-                            />
-                        </div>
-                        <div className='col right-col'>
+                        <div className='col content-col'>
                             <Content />
+                            {/* <Socials /> */}
                         </div>
                     </div>
                 </div>
-                <Socials />
+                {/* <Socials /> */}
             </div>
         </>
     )

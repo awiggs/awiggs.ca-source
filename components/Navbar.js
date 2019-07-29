@@ -6,18 +6,28 @@ class Navbar extends React.Component {
         this.state = {burgerActive: false};
 
         this.activateHamburger = this.activateHamburger.bind(this);
+        this.dynamicStickyHeader = this.dynamicStickyHeader.bind(this);
     }
 
     activateHamburger = () => {
-        console.log('test');
         var burger = document.getElementById('hamburger-icon');
         this.state.burgerActive = !this.state.burgerActive;
         this.state.burgerActive ? burger.classList.add('is-active') : burger.classList.remove('is-active');
     }
 
+    dynamicStickyHeader = () => {
+        console.log('Scrolled!');
+        var header = document.getElementsByClassName('header');
+        if (window.scrollY > 0) {
+            header.classList.add('sticky-header');
+        } else {
+            header.classList.remove('sticky-header');
+        }
+    }
+
     render() {
         return (
-            <nav className='navbar navbar-expand-sm navbar-light header'>
+            <nav className='navbar navbar-expand-sm navbar-light header' onScroll={this.dynamicStickyHeader}>
             <button className={ this.state.burgerActive ? 'is-active' : '' + "navbar-toggler hamburger hamburger--arrow-r"}
                 id='hamburger-icon'
                 onClick={this.activateHamburger}
@@ -56,7 +66,7 @@ class Navbar extends React.Component {
                         </li>
                         <li className="nav-item">
                             <a 
-                                href="#work" 
+                                href="/work" 
                                 className='nav-link m-2 menu-item'
                             >work</a>
                         </li>
