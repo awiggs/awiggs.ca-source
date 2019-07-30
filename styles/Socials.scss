@@ -12,9 +12,6 @@
 
 .soc-wrapper {
     display: flex;
-    justify-content: space-between;
-    bottom: 25px;
-    position: fixed;
     width: 100%;
 
     a {
@@ -38,17 +35,16 @@
     display: inline;
 }
 
-@media screen and (max-width: 1024px) {
-    .soc-wrapper {
-        bottom: 0;
-        width: 70%;
-    }
+//     .soc-wrapper {
+//         bottom: 0;
+//         width: 70%;
+//     }
     
-    .soc-location {
-        display: none;
-    }
+//     .soc-location {
+//         display: none;
+//     }
 
-    .soc-icons {
-        margin: 0 auto;
-    }
-}
+//     .soc-icons {
+//         margin: 0 auto;
+//     }
+// }

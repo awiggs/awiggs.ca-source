@@ -24,7 +24,7 @@ export default ({ pageName }) => {
                         </div>
                     </div>
                 </div>
-                <Socials />
+                <Socials className='home-soc' />
             </div>
         </>
     )

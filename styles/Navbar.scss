@@ -12,11 +12,37 @@
 
 .nav-item a {
     font-size: 1.1rem;
-    color: $social-icon !important;
+    color: $foreground !important;
 }
 
 .nav-item a:hover {
     color: $primary-logo !important;
+}
+
+.nav-title {
+    border: none !important;
+    p {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+        color: $foreground !important;
+        font-weight: 500;
+    }
+}
+
+.nav-socials {
+    border: none !important;
+}
+
+.hamburger:hover,
+.hamburger:active,
+.hamburger:focus {
+    opacity: 1 !important;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    height: 2px !important;
+    width: 30px !important;
 }
 
 #hamburger-icon:focus,
@@ -28,7 +54,7 @@
     display: none !important;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $mobile-width) {
     .navbar-brand-two {
         display: none !important;
     }
@@ -36,9 +62,37 @@
     .mobile-nav-logo {
         display: flex !important;
     }
+
+    .nav-item {
+        border-bottom: solid 1px $shade-2;
+    }
+
+    .nav-item a {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .nav-item:last-child {
+        border: none;
+    }
+
+    .nav-soc {
+        display: flex !important;
+        padding-top: 1rem;
+
+        .soc-icons {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .soc-location a i {
+            margin: 0 1vh 0 0;
+        }
+    }
+    
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: $mobile-width) {
     .nav-item {
         padding-left: 0.8rem;
         padding-right: 0.8rem;

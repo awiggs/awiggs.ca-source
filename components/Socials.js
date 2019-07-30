@@ -1,8 +1,8 @@
 import Vars from '../Vars';
 
-export default () => {
+export default ( { className }) => {
     return (
-        <div className="soc-wrapper">
+        <div className={ className + ' soc-wrapper'}>
           <div className='soc-icons'>
             <a target='_blank' href={Vars.github}>
                 <i className='sm fab fa-github'></i>

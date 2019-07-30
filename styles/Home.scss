@@ -3,7 +3,7 @@
 }
 
 .right-col {
-    margin-top: 10vh;
+    margin-top: 13vh;
     text-align: center;
 
     h1 {
@@ -14,7 +14,7 @@
 
     .home-resume-btn {
         background: transparent;
-        border: solid 2px $social-icon;
+        border: solid 2px $foreground;
         padding: 7px 13px 7px 13px;
         margin-top: 2.5vh;
 
@@ -26,12 +26,20 @@
 
 .left-col {
     .home-logo {
-        height: 500px;
-        width: 500px;
+        // height: 500px;
+        height: 100%;
+        // width: 500px;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 1024px) {
+.home-soc {
+    justify-content: space-between;
+    bottom: 25px;
+    position: fixed;
+}
+
+@media screen and (max-width: $mobile-width) {
     .row,
     .left-col,
     .right-col {
@@ -51,7 +59,7 @@
         }
     }
 
-    .soc-wrapper {
+    .home-soc {
         display: none !important;
     }
 }

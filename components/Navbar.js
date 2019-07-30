@@ -1,4 +1,5 @@
 import React from 'react'
+import Socials from './Socials';
 
 class Navbar extends React.Component {
     constructor(props) {
@@ -28,50 +29,63 @@ class Navbar extends React.Component {
     render() {
         return (
             <nav className='navbar navbar-expand-sm navbar-light header' onScroll={this.dynamicStickyHeader}>
-            <button className={ this.state.burgerActive ? 'is-active' : '' + "navbar-toggler hamburger hamburger--spin"}
+            <button className={ this.state.burgerActive ? 'is-active' : '' + 'navbar-toggler hamburger hamburger--squeeze'}
                 id='hamburger-icon'
                 onClick={this.activateHamburger}
-                type="button" 
-                data-toggle="collapse" 
-                data-target="#navbar" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation"
+                type='button' 
+                data-toggle='collapse' 
+                data-target='#navbar' 
+                aria-controls='navbarSupportedContent' 
+                aria-expanded='false' 
+                aria-label='Toggle navigation'
             >
-                {/* <span className="navbar-toggler-icon"></span> */}
+                {/* <span className='navbar-toggler-icon'></span> */}
                 <span className='hamburger-box'>
                     <span className='hamburger-inner'></span>
                 </span>
             </button>
-            <a className='mobile-nav-logo ml-auto d-inline-block' href='/'>
-                <img src='/static/Logo.png' width='50' height='50' alt=''></img>
+            <a className='mobile-only ml-auto d-inline-block' href='/'>
+                <img src='/static/Logo.png' width='40' height='40' alt=''></img>
             </a>
         
-                <div className="collapse navbar-collapse flex-grow-1 text-left" id="navbar">
-                    <ul className="navbar-nav mr-auto flex-nowrap">
-                        <li className="nav-item">
-                            <a 
-                                href="/" 
-                                className='nav-link m-2 menu-item'
-                            >home</a>
+                <div className='collapse navbar-collapse flex-grow-1 text-left' id='navbar'>
+                    <ul className='navbar-nav mr-auto flex-nowrap'>
+                        <li className='mobile-only nav-item nav-title'>
+                            <p className='nav-link m-2'>
+                                Pages
+                            </p>
                         </li>
-                        <li className="nav-item">
+                        <li className='nav-item'>
                             <a 
-                                href="/" 
+                                href='/' 
                                 className='nav-link m-2 menu-item'
-                            >resume</a>
+                            >Home</a>
                         </li>
-                        <li className="nav-item">
+                        <li className='nav-item'>
                             <a 
-                                href="#about" 
+                                href='/' 
                                 className='nav-link m-2 menu-item'
-                            >about</a>
+                            >Resume</a>
                         </li>
-                        <li className="nav-item">
+                        <li className='nav-item'>
                             <a 
-                                href="/work" 
+                                href='#about' 
                                 className='nav-link m-2 menu-item'
-                            >work</a>
+                            >About</a>
+                        </li>
+                        <li className='nav-item'>
+                            <a 
+                                href='/work' 
+                                className='nav-link m-2 menu-item'
+                            >Work</a>
+                        </li>
+                        <li className='mobile-only nav-item nav-title'>
+                            <p className='nav-link m-2'>
+                                Connect With Me
+                            </p>
+                        </li>
+                        <li className='mobile-only nav-item'>
+                            <Socials className='nav-soc' />
                         </li>
                     </ul>
                 </div>
@@ -89,45 +103,45 @@ export default Navbar;
 
 // export default ({ page }) => (
 //     <nav className='navbar navbar-expand-sm navbar-light header'>
-//     <button className={ this.state.burgerActive ? 'is-active' : '' + "hamburger hamburger--collapse"}
+//     <button className={ this.state.burgerActive ? 'is-active' : '' + 'hamburger hamburger--collapse'}
 //         id='hamburger-icon'
-//         onClick="activateHamburger()"
-//         type="button" 
-//         data-toggle="collapse" 
-//         data-target="#navbar" 
-//         aria-controls="navbarSupportedContent" 
-//         aria-expanded="false" 
-//         aria-label="Toggle navigation"
+//         onClick='activateHamburger()'
+//         type='button' 
+//         data-toggle='collapse' 
+//         data-target='#navbar' 
+//         aria-controls='navbarSupportedContent' 
+//         aria-expanded='false' 
+//         aria-label='Toggle navigation'
 //     >
-//         {/* <span className="navbar-toggler-icon"></span> */}
+//         {/* <span className='navbar-toggler-icon'></span> */}
 //         <span className='hamburger-box'>
 //             <span className='hamburger-inner'></span>
 //         </span>
 //     </button>
 
-//         <div className="collapse navbar-collapse flex-grow-1 text-right" id="navbar">
-//             <ul className="navbar-nav mr-auto flex-nowrap">
-//                 <li className="nav-item">
+//         <div className='collapse navbar-collapse flex-grow-1 text-right' id='navbar'>
+//             <ul className='navbar-nav mr-auto flex-nowrap'>
+//                 <li className='nav-item'>
 //                     <a 
-//                         href="/" 
+//                         href='/' 
 //                         className={ (page == 'about' ? 'nav-about ' : '') + 'nav-link m-2 menu-item'}
 //                     >home</a>
 //                 </li>
-//                 <li className="nav-item">
+//                 <li className='nav-item'>
 //                     <a 
-//                         href="/" 
+//                         href='/' 
 //                         className={ (page == 'about' ? 'nav-about ' : '') + 'nav-link m-2 menu-item'}
 //                     >resume</a>
 //                 </li>
-//                 <li className="nav-item">
+//                 <li className='nav-item'>
 //                     <a 
-//                         href="#about" 
+//                         href='#about' 
 //                         className={ (page == 'work' ? 'nav-work ' : '') + 'nav-link m-2 menu-item'}
 //                     >about</a>
 //                 </li>
-//                 <li className="nav-item">
+//                 <li className='nav-item'>
 //                     <a 
-//                         href="#work" 
+//                         href='#work' 
 //                         className={ (page == 'blog' ? 'nav-blog ' : '') + 'nav-link m-2 menu-item'}
 //                     >work</a>
 //                 </li>

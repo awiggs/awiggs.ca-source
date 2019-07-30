@@ -2,10 +2,25 @@
 $primary-logo:  #22BFA0;
 $primary-light: #FFFFFF;
 $primary-dark:  #282C34;
-$background:    #FFFFFF;
 $social-icon:   #000000;
 $sidebar-light: #E8EBF2;
 $sidebar-dark:  #333333;
+
+// Shades
+$background:    #FFFFFF;
+$shade-1:       #FAFAFA;
+$shade-2:       #EFEFEF;
+$shade-3:       #999999;
+$shade-4:       #888888;
+$shade-5:       #666666;
+$shade-6:       #444444;
+$shade-7:       #333333;
+$shade-8:       #111111;
+$foreground:    #000000;
+
+// MOBILE WIDTH
+$mobile-width: 575px;
+
 
 // Default CSS
 body {
