@@ -24,9 +24,17 @@
     outline: none;
 }
 
+.mobile-nav-logo {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .navbar-brand-two {
         display: none !important;
+    }
+
+    .mobile-nav-logo {
+        display: flex;
     }
 }
 

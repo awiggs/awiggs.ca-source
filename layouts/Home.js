@@ -15,7 +15,7 @@ export default ({ pageName }) => {
                     <div className='row'>
                         <div className='col left-col'>
                             <Image 
-                                src={`/static/Logo.png`}
+                                src={`/static/Logo-Light.png`}
                                 className={`home-logo`}
                             />
                         </div>

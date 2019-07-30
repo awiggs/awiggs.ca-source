@@ -28,7 +28,7 @@ class Navbar extends React.Component {
     render() {
         return (
             <nav className='navbar navbar-expand-sm navbar-light header' onScroll={this.dynamicStickyHeader}>
-            <button className={ this.state.burgerActive ? 'is-active' : '' + "navbar-toggler hamburger hamburger--arrow-r"}
+            <button className={ this.state.burgerActive ? 'is-active' : '' + "navbar-toggler hamburger hamburger--spin"}
                 id='hamburger-icon'
                 onClick={this.activateHamburger}
                 type="button" 
@@ -43,6 +43,9 @@ class Navbar extends React.Component {
                     <span className='hamburger-inner'></span>
                 </span>
             </button>
+            <a className='mobile-nav-logo ml-auto d-inline-block' href='/'>
+                <img src='/static/Logo.png' width='50' height='50' alt=''></img>
+            </a>
         
                 <div className="collapse navbar-collapse flex-grow-1 text-left" id="navbar">
                     <ul className="navbar-nav mr-auto flex-nowrap">
