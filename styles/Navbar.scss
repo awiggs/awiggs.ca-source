@@ -1,8 +1,6 @@
-.sticky-header {
-    background: $background;
-    z-index: 1020;
-    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
-}
+// .sticky-header {
+//     box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+// }
 
 .header {
     background: $background;
@@ -57,6 +55,12 @@
 #hamburger-icon:focus,
 #hamburger-icon:hover {
     outline: none;
+}
+
+.no-location {
+    .soc-location {
+        display: none;
+    }
 }
 
 .mobile-nav-logo {

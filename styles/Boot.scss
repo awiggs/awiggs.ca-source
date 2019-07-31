@@ -18,7 +18,6 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    // color: #999;
 }
 
 #__next {
@@ -34,9 +33,17 @@ p {
     display: none !important;
 }
 
+.hide {
+    display: none !important;
+}
+
 @media screen and (max-width: $mobile-width) {
     .mobile-only {
         display: flex !important;
+    }
+
+    .desktop-only {
+        display: none !important;
     }
 
     .content.container {
@@ -45,14 +52,10 @@ p {
 }
 
 // Load Stylings
-// @import './Content.scss';
+@import './Animations.scss';
 @import './Home.scss';
 @import './Page.scss';
 @import './Socials.scss';
 @import './Navbar.scss';
+@import './Logos.scss';
 @import './hamburgers/_sass/hamburgers/hamburgers.scss';
-// @import './Sidebar.scss';
-// @import './Logos.scss';
-// @import './NavItem.scss';
-// @import './SandwichIcon.scss';
-// @import './Footer.scss';

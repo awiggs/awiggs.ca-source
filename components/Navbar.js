@@ -6,7 +6,7 @@ class Navbar extends React.Component {
         super(props);
         this.state = {
             burgerActive: false,
-            stickyHeader: 'header'
+            // stickyHeader: ''
         };
     }
 
@@ -16,21 +16,22 @@ class Navbar extends React.Component {
         this.state.burgerActive ? burger.classList.add('is-active') : burger.classList.remove('is-active');
     }
 
-    componentDidMount(){
-        window.addEventListener('scroll', () => {
-           let activeClass = '';
-           if(window.scrollY === 0){
-               activeClass = 'header';
-           } else {
-               activeClass = 'sticky-header';
-           }
-           this.setState({ stickyHeader: activeClass });
-        });
-    }
+    // Maybe try to fix this for box-shadow
+    // componentDidMount(){
+    //     window.addEventListener('scroll', () => {
+    //        let activeClass = '';
+    //        if(window.scrollY === 0){
+    //            activeClass = '';
+    //        } else {
+    //            activeClass = 'sticky-header';
+    //        }
+    //        this.setState({ stickyHeader: activeClass });
+    //     });
+    // }
 
     render() {
         return (
-            <nav className={this.state.stickyHeader + ' navbar navbar-expand-sm navbar-light container fixed-top'}>
+            <nav className='navbar navbar-expand-sm navbar-light container header fixed-top'>
             <button className={ this.state.burgerActive ? 'is-active' : '' + 'navbar-toggler hamburger hamburger--squeeze'}
                 id='hamburger-icon'
                 onClick={this.activateHamburger}
@@ -41,7 +42,6 @@ class Navbar extends React.Component {
                 aria-expanded='false' 
                 aria-label='Toggle navigation'
             >
-                {/* <span className='navbar-toggler-icon'></span> */}
                 <span className='hamburger-box'>
                     <span className='hamburger-inner'></span>
                 </span>
@@ -75,12 +75,12 @@ class Navbar extends React.Component {
                                 className='nav-link m-2 menu-item'
                             >Work</a>
                         </li>
-                        <li className='nav-item nav-button'>
+                        {/* <li className='nav-item nav-button'>
                             <a 
                                 href='/' 
                                 className='nav-link m-2 menu-item'
                             ><i className='fas fa-download'></i>Resume</a>
-                        </li>
+                        </li> */}
                         <li className='mobile-only nav-item nav-title'>
                             <p className='nav-link m-2'>
                                 Connect With Me
@@ -91,8 +91,11 @@ class Navbar extends React.Component {
                         </li>
                     </ul>
                 </div>
-                <a className='navbar-brand-two mx-auto d-inline-block' href='/'>
-                    <img src='/static/Logo.png' width='50' height='50' alt=''></img>
+                <div className={ (this.props.page == 'home' ? '' : 'hide ') + 'navbar-brand-two mx-auto d-inline-block desktop-only'} href='/'>
+                    <Socials className='no-location' />
+                </div>
+                <a className={ (this.props.page == 'work' ? '' : 'hide ') + 'navbar-brand-two mx-auto d-inline-block desktop-only'} href='/'>
+                    <img src='/static/Logo.png' width='50' height='50' alt='' />
                 </a>
             </nav>
         );

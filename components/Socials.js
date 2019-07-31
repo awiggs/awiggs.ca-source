@@ -2,7 +2,7 @@ import Vars from '../Vars';
 
 export default ( { className }) => {
     return (
-        <div className={ className + ' soc-wrapper'}>
+        <div className={ className ? className + ' soc-wrapper' : 'soc-wrapper'}>
           <div className='soc-icons'>
             <a target='_blank' href={Vars.github}>
                 <i className='sm fab fa-github'></i>
