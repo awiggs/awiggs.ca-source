@@ -11,7 +11,7 @@ export default ({ pageName }) => {
             <Boot title={pageName}/>
             <div className='page home'>
                 <Navbar />
-                <div className='container'>
+                <div className='content container'>
                     <div className='row'>
                         <div className='col left-col'>
                             <Image 

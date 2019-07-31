@@ -38,6 +38,10 @@ p {
     .mobile-only {
         display: flex !important;
     }
+
+    .content.container {
+        margin-top: 10vh;
+    }
 }
 
 // Load Stylings

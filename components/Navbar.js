@@ -4,10 +4,10 @@ import Socials from './Socials';
 class Navbar extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {burgerActive: false};
-
-        this.activateHamburger = this.activateHamburger.bind(this);
-        this.dynamicStickyHeader = this.dynamicStickyHeader.bind(this);
+        this.state = {
+            burgerActive: false,
+            stickyHeader: 'header'
+        };
     }
 
     activateHamburger = () => {
@@ -16,19 +16,21 @@ class Navbar extends React.Component {
         this.state.burgerActive ? burger.classList.add('is-active') : burger.classList.remove('is-active');
     }
 
-    dynamicStickyHeader = () => {
-        console.log('Scrolled!');
-        var header = document.getElementsByClassName('header');
-        if (window.scrollY > 0) {
-            header.classList.add('sticky-header');
-        } else {
-            header.classList.remove('sticky-header');
-        }
+    componentDidMount(){
+        window.addEventListener('scroll', () => {
+           let activeClass = '';
+           if(window.scrollY === 0){
+               activeClass = 'header';
+           } else {
+               activeClass = 'sticky-header';
+           }
+           this.setState({ stickyHeader: activeClass });
+        });
     }
 
     render() {
         return (
-            <nav className='navbar navbar-expand-sm navbar-light header' onScroll={this.dynamicStickyHeader}>
+            <nav className={this.state.stickyHeader + ' navbar navbar-expand-sm navbar-light container fixed-top'}>
             <button className={ this.state.burgerActive ? 'is-active' : '' + 'navbar-toggler hamburger hamburger--squeeze'}
                 id='hamburger-icon'
                 onClick={this.activateHamburger}
@@ -63,12 +65,6 @@ class Navbar extends React.Component {
                         </li>
                         <li className='nav-item'>
                             <a 
-                                href='/' 
-                                className='nav-link m-2 menu-item'
-                            >Resume</a>
-                        </li>
-                        <li className='nav-item'>
-                            <a 
                                 href='#about' 
                                 className='nav-link m-2 menu-item'
                             >About</a>
@@ -78,6 +74,12 @@ class Navbar extends React.Component {
                                 href='/work' 
                                 className='nav-link m-2 menu-item'
                             >Work</a>
+                        </li>
+                        <li className='nav-item nav-button'>
+                            <a 
+                                href='/' 
+                                className='nav-link m-2 menu-item'
+                            ><i className='fas fa-download'></i>Resume</a>
                         </li>
                         <li className='mobile-only nav-item nav-title'>
                             <p className='nav-link m-2'>

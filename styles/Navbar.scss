@@ -1,7 +1,6 @@
 .sticky-header {
-    position: fixed;
-    width: 100%;
-    height: 80px;
+    background: $background;
+    z-index: 1020;
     box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
 }
 
@@ -26,6 +25,16 @@
         margin-bottom: 0 !important;
         color: $foreground !important;
         font-weight: 500;
+    }
+}
+
+.nav-button {
+    background: $shade-2;
+    border: solid 1px transparent;
+    border-radius: 5px;
+
+    a > i {
+        margin-right: 0.5rem;
     }
 }
 
@@ -74,6 +83,10 @@
 
     .nav-item:last-child {
         border: none;
+    }
+
+    .nav-button {
+        background: $background;
     }
 
     .nav-soc {
