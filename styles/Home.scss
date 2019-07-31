@@ -39,6 +39,19 @@
     position: fixed;
 }
 
+.home .content {
+    text-align: center;
+
+    h1 {
+        font-family: 'Sacramento', serif;
+        font-size: 3rem;
+    }
+}
+
+.home .row {
+    display: block;
+}
+
 @media screen and (max-width: $mobile-width) {
     .row,
     .left-col,

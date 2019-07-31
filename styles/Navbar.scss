@@ -68,6 +68,11 @@
 }
 
 @media screen and (max-width: $mobile-width) {
+    // Remove Navbar Logo from Mobile @ Home
+    .page.home .mobile-only > img {
+        display: none;
+    }
+
     .navbar-brand-two {
         display: none !important;
     }

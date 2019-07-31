@@ -11,10 +11,12 @@ export default ({ pageName }) => {
             <Boot title={pageName}/>
             <div className='page home'>
                 <Navbar page='home' />
-                <div className='content container'>
+                <div className='content-container container'>
                     <div className='row'>
                         <Logos.Logo />
-                        {/* <Content /> */}
+                        <div className='content'>
+                            <Content />
+                        </div>
                         {/* <div className='col left-col'>
                             <Logos.Logo />
                         </div>

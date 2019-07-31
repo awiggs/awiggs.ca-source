@@ -30,13 +30,12 @@
 }
 
 // Logo Animations
-
 .logo-svg-top {
-    animation: popdown 4s ease 1;
+    animation: popdown 3s ease 1;
 }
 
 .logo-svg-bot {
-    animation: popup 4s ease 1;
+    animation: popup 3s ease 1;
 }
 
 .right-col {
@@ -49,5 +48,15 @@
 
 // Navbar Animations
 .home > .navbar {
-    animation: hideshow 5s ease 1;
+    animation: hideshow 6s ease 1;
+}
+
+// Home Animations
+.home .content {
+  animation: hideshow 6s ease 1;
+}
+
+// Work Animations
+.work {
+  animation: hideshow 1s ease-in 1;
 }

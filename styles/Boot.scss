@@ -29,6 +29,10 @@ p {
     width: 100%;
 }
 
+.content {
+    margin: auto;
+}
+
 .mobile-only {
     display: none !important;
 }
@@ -46,7 +50,7 @@ p {
         display: none !important;
     }
 
-    .content.container {
+    .content-container {
         margin-top: 10vh;
     }
 }
