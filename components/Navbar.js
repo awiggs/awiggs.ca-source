@@ -1,4 +1,5 @@
 import React from 'react'
+import Logos from './Logos';
 import Socials from './Socials';
 
 class Navbar extends React.Component {
@@ -6,7 +7,7 @@ class Navbar extends React.Component {
         super(props);
         this.state = {
             burgerActive: false,
-            // stickyHeader: ''
+            stickyHeader: ''
         };
     }
 
@@ -47,7 +48,8 @@ class Navbar extends React.Component {
                 </span>
             </button>
             <a className='mobile-only ml-auto d-inline-block' href='/'>
-                <img src='/static/Logo.png' width='40' height='40' alt=''></img>
+                {/* <img src='/static/Logo.png' width='40' height='40' alt=''></img> */}
+                <Logos.WhiteLogo width='40' height='40' />
             </a>
         
                 <div className='collapse navbar-collapse flex-grow-1 text-left' id='navbar'>
@@ -57,15 +59,15 @@ class Navbar extends React.Component {
                                 Pages
                             </p>
                         </li>
-                        <li className='nav-item'>
+                        {/* <li className='desktop-only nav-item'>
                             <a 
                                 href='/' 
                                 className='nav-link m-2 menu-item'
                             >Home</a>
-                        </li>
+                        </li> */}
                         <li className='nav-item'>
                             <a 
-                                href='#about' 
+                                href='/about' 
                                 className='nav-link m-2 menu-item'
                             >About</a>
                         </li>
@@ -75,12 +77,12 @@ class Navbar extends React.Component {
                                 className='nav-link m-2 menu-item'
                             >Work</a>
                         </li>
-                        {/* <li className='nav-item nav-button'>
+                        <li className='nav-item nav-button'>
                             <a 
                                 href='/' 
                                 className='nav-link m-2 menu-item'
                             ><i className='fas fa-download'></i>Resume</a>
-                        </li> */}
+                        </li>
                         <li className='mobile-only nav-item nav-title'>
                             <p className='nav-link m-2'>
                                 Connect With Me

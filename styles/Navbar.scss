@@ -27,10 +27,6 @@
 }
 
 .nav-button {
-    background: $shade-2;
-    border: solid 1px transparent;
-    border-radius: 5px;
-
     a > i {
         margin-right: 0.5rem;
     }
@@ -73,6 +69,27 @@
         display: none;
     }
 
+    .hamburger {
+        padding: 5px 15px 0px !important;
+    }    
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        background-color: $background !important;
+    }
+
+    .mobile-only {
+        .logo-svg {
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    .navbar {
+        background: $foreground;
+    }
+
     .navbar-brand-two {
         display: none !important;
     }
@@ -88,14 +105,17 @@
     .nav-item a {
         font-size: 1rem;
         font-weight: 300;
+        color: $background !important;
     }
 
     .nav-item:last-child {
         border: none;
     }
 
-    .nav-button {
-        background: $background;
+    .nav-title {
+        p {
+            color: $background !important;
+        }
     }
 
     .nav-soc {

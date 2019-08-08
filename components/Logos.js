@@ -17,5 +17,17 @@ export default {
                 </g>
             </svg>
         );
+    },
+
+    WhiteLogo() {
+        return (
+            <svg className='logo-svg' viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg' version='1.1'>
+                <g id='transparent'>
+                    <path className='logo-svg-mid' id='path' d='M429 622 L501 498 572 622 429 622 Z' fill='#ffffff' fillOpacity='1' stroke='none'/>
+                    <path className='logo-svg-top' id='path-1' d='M247 622 L371.491 622 500 399 629 622 752.999 622 499.999 185 247 622 Z' fill='#ffffff' fillOpacity='1' stroke='none'/>
+                    <path className='logo-svg-bot' id='path-2' d='M225 661 L136 815 864 815 776 662 652 662 691 729 633 729 594 661 407 661 368 729 310 729 349 661 225 661 Z' fill='#ffffff' fillOpacity='1' stroke='none'/>
+                </g>
+            </svg>
+        );  
     }
 }
