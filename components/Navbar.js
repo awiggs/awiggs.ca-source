@@ -33,7 +33,7 @@ class Navbar extends React.Component {
     render() {
         return (
             <nav className='navbar navbar-expand-sm navbar-light container header fixed-top'>
-            <button className={ this.state.burgerActive ? 'is-active' : '' + 'navbar-toggler hamburger hamburger--squeeze'}
+            <button className={ this.state.burgerActive ? 'is-active' : '' + 'navbar-toggler hamburger hamburger--minus'}
                 id='hamburger-icon'
                 onClick={this.activateHamburger}
                 type='button' 
@@ -48,8 +48,7 @@ class Navbar extends React.Component {
                 </span>
             </button>
             <a className='mobile-only ml-auto d-inline-block' href='/'>
-                {/* <img src='/static/Logo.png' width='40' height='40' alt=''></img> */}
-                <Logos.WhiteLogo width='40' height='40' />
+                <Logos.WhiteLogo />
             </a>
         
                 <div className='collapse navbar-collapse flex-grow-1 text-left' id='navbar'>

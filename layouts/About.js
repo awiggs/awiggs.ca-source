@@ -1,6 +1,7 @@
 // Components
 import Boot from '../components/Boot'
 import Navbar from '../components/Navbar'
+import Scroll from '../components/Scroll'
 import Socials from '../components/Socials'
 import Content from '../content/about.mdx'
 
@@ -8,6 +9,7 @@ export default ({ pageName }) => {
     return (
         <>
             <Boot title={pageName}/>
+            <Scroll />
             <div className='page work'>
                 <Navbar page='work' />
                 <div className='content-container container'>

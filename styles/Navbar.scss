@@ -65,18 +65,26 @@
 
 @media screen and (max-width: $mobile-width) {
     // Remove Navbar Logo from Mobile @ Home
-    .page.home .mobile-only > img {
+    .page.home .mobile-only > .logo-svg {
         display: none;
     }
 
     .hamburger {
         padding: 5px 15px 0px !important;
-    }    
+    }
+
+    .hamburger-box {
+        margin-top: 10px;
+    }
 
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
         background-color: $background !important;
+    }
+
+    .hamburger-inner::after {
+        display: none !important;
     }
 
     .mobile-only {
@@ -105,7 +113,7 @@
     .nav-item a {
         font-size: 1rem;
         font-weight: 300;
-        color: $background !important;
+        color: $shade-2 !important;
     }
 
     .nav-item:last-child {
@@ -127,8 +135,14 @@
             margin-left: 0;
         }
 
-        .soc-location a i {
-            margin: 0 1vh 0 0;
+        .soc-location a {
+            p {
+                font-size: 1em;
+            }
+
+            i {
+                margin: 0 1vh 0 0;
+            }
         }
     }
     
