@@ -27,7 +27,7 @@ class Footer extends React.Component {
                             </ul>
                         </div>
                         <div className='col-sm-2'>
-                            <h5>Support</h5>
+                            <h5>Contact</h5>
                             <ul>
                                 <li><a href='#'>FAQ</a></li>
                                 <li><a href='#'>Help desk</a></li>
