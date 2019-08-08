@@ -2,6 +2,7 @@
 import Boot from '../components/Boot'
 import Navbar from '../components/Navbar'
 import Scroll from '../components/Scroll'
+import Footer from '../components/Footer'
 import Socials from '../components/Socials'
 import Content from '../content/work.mdx'
 
@@ -21,6 +22,7 @@ export default ({ pageName }) => {
                     </div>
                 </div>
                 {/* <Socials /> */}
+                <Footer />
             </div>
         </>
     )

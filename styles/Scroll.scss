@@ -5,19 +5,25 @@
     z-index: 10000;
     width: 100%;
     background-color: #f1f1f1;
-    margin-top: 62px;
+    margin-top: 74px;
 }
   
 /* The progress container (grey background) */
 .progress-container {
     width: 100%;
-    height: 3px;
+    height: 2px;
     background: $background;
 }
   
 /* The progress bar (scroll indicator) */
 .progress-bar {
-    height: 3px;
+    height: 2px;
     background: $primary-logo;
     width: 0%;
+}
+
+@media screen and (max-width: $mobile-width) {
+    .progress-header {
+        margin-top: 62px;
+    }
 }
