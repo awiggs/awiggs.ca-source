@@ -5,6 +5,10 @@
 .header {
     background: $background;
     z-index: 1020;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav-item a {

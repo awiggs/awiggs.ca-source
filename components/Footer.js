@@ -8,41 +8,31 @@ class Footer extends React.Component {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-sm-3'>
-                            <h2 className='logo'><a href='#'><Logos.Logo /></a></h2>
+                            <h2 className='logo'><a href='/'><Logos.WhiteLogo /></a></h2>
                         </div>
                         <div className='col-sm-2'>
-                            <h5>Get started</h5>
+                            <h5>Pages</h5>
                             <ul>
-                                <li><a href='#'>Home</a></li>
-                                <li><a href='#'>Sign up</a></li>
-                                <li><a href='#'>Downloads</a></li>
+                                {/* <li><a href='/'>Home</a></li> */}
+                                <li><a href='/about'>About</a></li>
+                                <li><a href='/work'>Work</a></li>
                             </ul>
                         </div>
                         <div className='col-sm-2'>
-                            <h5>About us</h5>
+                            <h5>Find Me On</h5>
                             <ul>
-                                <li><a href='#'>Company Information</a></li>
-                                <li><a href='#'>Contact us</a></li>
-                                <li><a href='#'>Reviews</a></li>
-                            </ul>
-                        </div>
-                        <div className='col-sm-2'>
-                            <h5>Contact</h5>
-                            <ul>
-                                <li><a href='#'>FAQ</a></li>
-                                <li><a href='#'>Help desk</a></li>
-                                <li><a href='#'>Forums</a></li>
+                                <li><a href='#'><i className='fab fa-linkedin'></i> LinkedIn</a></li>
+                                <li><a href='#'><i className='fab fa-instagram'></i> Instagram</a></li>
+                                <li><a href='#'><i className='fab fa-github'></i> GitHub</a></li>
                             </ul>
                         </div>
                         <div className='col-sm-3'>
-                            <div className='social-networks'>
-                                <a href='#' className='github'><i className='fab fa-github'></i></a>
-                                <a href='#' className='instagram'><i className='fab fa-instagram'></i></a>
-                                <a href='#' className='linkedin'><i className='fab fa-linkedin'></i></a>
-                            </div>
-                            <button type='button' className='btn btn-default'>
-                                <a href='/' className='m-2'><i className='fas fa-download'></i>Resume</a>
-                            </button>
+                            <h5>Contact Me</h5>
+                            <ul>
+                                {/* <li><a href='#'><i className='fas fa-phone'></i> (250) 732-6138</a></li> */}
+                                <li><a href='#'><i className='far fa-envelope'></i> andrew@awiggs.ca</a></li>
+                                <li><a href='#'><i className='fas fa-download'></i> Resume</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -32,7 +32,7 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <nav className='navbar navbar-expand-sm navbar-light container header fixed-top'>
+            <nav className='navbar navbar-expand-sm navbar-light container header'>
             <button className={ this.state.burgerActive ? 'is-active' : '' + 'navbar-toggler hamburger hamburger--minus'}
                 id='hamburger-icon'
                 onClick={this.activateHamburger}
@@ -50,9 +50,14 @@ class Navbar extends React.Component {
             <a className='mobile-only ml-auto d-inline-block' href='/'>
                 <Logos.WhiteLogo />
             </a>
-        
-                <div className='collapse navbar-collapse flex-grow-1 text-left' id='navbar'>
-                    <ul className='navbar-nav mr-auto flex-nowrap'>
+                <div className={ (this.props.page == 'home' ? '' : 'hide ') + 'navbar-brand-two mx-auto d-inline-block desktop-only'} href='/'>
+                    <Socials className='no-location' />
+                </div>
+                <a className={ (this.props.page == 'work' ? '' : 'hide ') + 'navbar-brand-two mx-auto d-inline-block desktop-only'} href='/'>
+                    <img src='/static/Logo.png' width='75' height='75' alt='' />
+                </a>
+                <div className='collapse navbar-collapse flex-grow-1 text-right' id='navbar'>
+                    <ul className='navbar-nav ml-auto flex-nowrap'>
                         <li className='mobile-only nav-item nav-title'>
                             <p className='nav-link m-2'>
                                 Pages
@@ -92,12 +97,12 @@ class Navbar extends React.Component {
                         </li>
                     </ul>
                 </div>
-                <div className={ (this.props.page == 'home' ? '' : 'hide ') + 'navbar-brand-two mx-auto d-inline-block desktop-only'} href='/'>
+                {/* <div className={ (this.props.page == 'home' ? '' : 'hide ') + 'navbar-brand-two mx-auto d-inline-block desktop-only'} href='/'>
                     <Socials className='no-location' />
                 </div>
-                <a className={ (this.props.page == 'work' ? '' : 'hide ') + 'navbar-brand-two mx-auto d-inline-block desktop-only'} href='/'>
+                <div className={ (this.props.page == 'work' ? '' : 'hide ') + 'navbar-brand-two mx-auto d-inline-block desktop-only'} href='/'>
                     <img src='/static/Logo.png' width='50' height='50' alt='' />
-                </a>
+                </div> */}
             </nav>
         );
     }
