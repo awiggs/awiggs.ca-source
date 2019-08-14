@@ -22,9 +22,9 @@ class Footer extends React.Component {
                         <div className='col-sm-2'>
                             <h5>Find Me On</h5>
                             <ul>
-                                <li><a href={Vars.github}><i className='fab fa-linkedin'></i> LinkedIn</a></li>
+                                <li><a href={Vars.github}><i className='fab fa-github'></i> GitHub</a></li>
                                 <li><a href={Vars.instagram}><i className='fab fa-instagram'></i> Instagram</a></li>
-                                <li><a href={Vars.linkedin}><i className='fab fa-github'></i> GitHub</a></li>
+                                <li><a href={Vars.linkedin}><i className='fab fa-linkedin'></i> LinkedIn</a></li>
                             </ul>
                         </div>
                         <div className='col-sm-3'>
