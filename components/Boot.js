@@ -9,7 +9,7 @@ export default ({
     keywords    = [], 
     description = '', 
     author      = 'Andrew Wiggins',
-    favicon     = 'static/new-favicon.ico',
+    favicon     = 'static/favicon.ico',
 }) => (
     <Head>
         <title>{title}</title>
