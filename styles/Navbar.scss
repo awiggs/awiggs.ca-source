@@ -102,6 +102,10 @@
         background: $foreground;
     }
 
+    .navbar-collapse {
+        text-align: left !important;
+    }
+
     .navbar-brand-two {
         display: none !important;
     }
