@@ -18,6 +18,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
+    color: $shade-5;
 }
 
 #__next {
@@ -57,6 +58,7 @@ p {
 
 // Load Stylings
 @import './Animations.scss';
+@import './Content.scss';
 @import './Home.scss';
 @import './Footer.scss';
 @import './Page.scss';
@@ -64,4 +66,5 @@ p {
 @import './Scroll.scss';
 @import './Navbar.scss';
 @import './Logos.scss';
+@import './Spacer.scss';
 @import './hamburgers/_sass/hamburgers/hamburgers.scss';
