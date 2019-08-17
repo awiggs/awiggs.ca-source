@@ -5,6 +5,11 @@
     margin: auto;
 }
 
+.home .waves-svg {
+    bottom: 0;
+    position: fixed;
+}
+
 @media screen and (max-width: $mobile-width) {
     .home .logo-svg {
         height: 100%;

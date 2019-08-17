@@ -1,0 +1,133 @@
+$bar-height: 11px;
+$outer-bar: #fff;
+$inner-bar: $primary-logo;
+
+.skill-bar {
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+    background: $outer-bar;
+    height: $bar-height;
+    width: 20%;
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    margin: 0;
+}
+
+.skill-10 {
+    background: $inner-bar;
+    height: $bar-height;
+    width: 10%;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.skill-20 {
+    background: $inner-bar;
+    height: $bar-height;
+    width: 20%;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.skill-30 {
+    background: $inner-bar;
+    height: $bar-height;
+    width: 30%;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.skill-40 {
+    background: $inner-bar;
+    height: $bar-height;
+    width: 40%;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.skill-50 {
+    background: $inner-bar;
+    height: $bar-height;
+    width: 50%;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.skill-60 {
+    background: $inner-bar;
+    height: $bar-height;
+    width: 60%;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.skill-70 {
+    background: $inner-bar;
+    height: $bar-height;
+    width: 70%;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.skill-80 {
+    background: $inner-bar;
+    height: $bar-height;
+    width: 80%;
+}
+
+.skill-90 {
+    background: $inner-bar;
+    height: $bar-height;
+    width: 90%;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.skill-100 {
+    background: $inner-bar;
+    height: $bar-height;
+    width: 100%;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+// Animation
+@keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
