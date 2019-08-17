@@ -131,3 +131,10 @@ $inner-bar: $primary-logo;
       width: 0%
     }
   }
+
+// Web
+@media screen and (max-width: $mobile-width) {
+    .skill-bar {
+        width: 100%;
+    }
+}
