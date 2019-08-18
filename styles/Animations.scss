@@ -52,7 +52,9 @@
 }
 
 // Home Animations
-.home .content {
+.home .content,
+.home .home-svg,
+.home .home-socials {
   animation: hideshow 6s ease 1;
 }
 

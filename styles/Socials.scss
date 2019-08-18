@@ -20,19 +20,37 @@
 
     .soc-icons {
         margin-right: auto;
-        margin-left: 2%;
         display: flex;
     }
     
     .soc-location {
         margin-left: auto;
-        margin-right: 2%;
         display: flex;
     }
 }
 
 .icon-text {
     display: inline;
+}
+
+.home-socials {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    position: absolute;
+    padding: 0.5rem 1rem;
+
+    .soc-wrapper {
+        .soc-icons {
+            margin-left: 0;
+        }
+
+        .soc-location {
+            margin-right: 0;
+        }
+    }
 }
 
 //     .soc-wrapper {

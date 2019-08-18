@@ -50,10 +50,13 @@ class Navbar extends React.Component {
             <a className='mobile-only ml-auto d-inline-block' href='/'>
                 <Logos.WhiteLogo />
             </a>
-                <div className={ (this.props.page == 'home' ? '' : 'hide ') + 'navbar-brand-two mx-auto d-inline-block desktop-only'} href='/'>
+                {/* <div className={ (this.props.page == 'home' ? '' : 'hide ') + 'navbar-brand-two mx-auto d-inline-block desktop-only'} href='/'>
                     <Socials className='no-location' />
                 </div>
                 <a className={ (this.props.page == 'work' ? '' : 'hide ') + 'navbar-brand-two mx-auto d-inline-block desktop-only'} href='/'>
+                    <img src='/static/Logo.png' width='75' height='75' alt='' />
+                </a> */}
+                <a className='navbar-brand-two mx-auto d-inline-block desktop-only' href='/'>
                     <img src='/static/Logo.png' width='75' height='75' alt='' />
                 </a>
                 <div className='collapse navbar-collapse flex-grow-1 text-right' id='navbar'>

@@ -1,6 +1,5 @@
 // Components
 import Boot from '../components/Boot'
-import Logos from '../components/Logos'
 import Navbar from '../components/Navbar'
 import Socials from '../components/Socials'
 import Content from '../content/index.mdx'
@@ -11,21 +10,19 @@ export default ({ pageName }) => {
             <Boot title={pageName}/>
             <div className='page home'>
                 <Navbar page='home' />
-                <div className='content-container container'>
+                <div className='container'>
                     <div className='row'>
-                        <Logos.Logo />
-                        <div className='content'>
-                            <Content />
+                        <div className='mr-auto col'>
+                            <div className='content'>
+                                <Content />
+                            </div>
                         </div>
-                        {/* <div className='col left-col'>
-                            <Logos.Logo />
+                        <div className='ml-auto col'>
+                            <img className='home-svg' src='../static/svg/webDev.svg' />
                         </div>
-                        <div className='col right-col'>
-                            <Content />
-                        </div> */}
                     </div>
                 </div>
-                <Logos.Waves />
+                <Socials className='container home-socials desktop-only'/>
             </div>
         </>
     )
