@@ -33,7 +33,7 @@ class Navbar extends React.Component {
     render() {
         return (
             <nav className='navbar navbar-expand-sm navbar-light container header'>
-            <button className={ this.state.burgerActive ? 'is-active' : '' + 'navbar-toggler hamburger hamburger--minus'}
+            <button className='navbar-toggler hamburger hamburger--minus'
                 id='hamburger-icon'
                 onClick={this.activateHamburger}
                 type='button' 

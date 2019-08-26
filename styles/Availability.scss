@@ -1,0 +1,20 @@
+$available:     #61E984;
+$unavailabl:    #cc0011;
+
+.availability {
+    display: inline-block;
+    height: 32px;
+
+    p {
+        display: inline-block;
+        margin-left: 0.5rem;
+    }
+}
+
+.availability-dot {
+    height: 10px;
+    width: 10px;
+    background-color: $available;
+    border-radius: 50%;
+    display: inline-block;
+}

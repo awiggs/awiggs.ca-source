@@ -22,7 +22,7 @@ export default ({ pageName }) => {
                         </div>
                     </div>
                 </div>
-                <Socials className='container home-socials desktop-only'/>
+                <Socials className='container home-socials no-location desktop-only'/>
             </div>
         </>
     )

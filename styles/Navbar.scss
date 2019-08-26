@@ -98,6 +98,15 @@
         }
     }
 
+    // Fullscreen Mobile
+    .fs-nav {
+        height: 100%;
+
+        .show {
+            height: 100%;
+        }
+    }
+
     .navbar {
         background: $foreground;
     }
