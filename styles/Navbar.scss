@@ -69,12 +69,12 @@
 
 @media screen and (max-width: $mobile-width) {
     // Remove Navbar Logo from Mobile @ Home
-    .page.home .mobile-only > .logo-svg {
-        display: none;
-    }
+    // .page.home .mobile-only > .logo-svg {
+    //     display: none;
+    // }
 
     .hamburger {
-        padding: 5px 15px 0px !important;
+        padding: 5px 0px 0px !important;
     }
 
     .hamburger-box {
@@ -101,12 +101,11 @@
     // Fullscreen Mobile
     .fs-nav {
         background: $foreground !important;
-        transition: background 1s ease-out;
     }
 
     .navbar {
         background: $nav-bg;
-        transition: background 0.25s ease-in;
+        transition: background 0.3s ease-in;
         padding: 0 1rem !important;
     }
 
