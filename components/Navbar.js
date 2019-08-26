@@ -15,6 +15,9 @@ class Navbar extends React.Component {
         var burger = document.getElementById('hamburger-icon');
         this.state.burgerActive = !this.state.burgerActive;
         this.state.burgerActive ? burger.classList.add('is-active') : burger.classList.remove('is-active');
+
+        var nav = document.getElementsByClassName('header')[0];
+        this.state.burgerActive ? nav.classList.add('fs-nav') : nav.classList.remove('fs-nav');
     }
 
     // Maybe try to fix this for box-shadow
