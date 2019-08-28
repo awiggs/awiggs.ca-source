@@ -18,7 +18,7 @@ export default ({ pageName }) => {
                             </div>
                         </div>
                         <div className='ml-auto col'>
-                            <img className='home-svg' src='../static/svg/webDev.svg' />
+                            <img className='home-svg' src='../static/svg/designer.svg' />
                         </div>
                     </div>
                 </div>

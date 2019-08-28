@@ -69,12 +69,12 @@ class Navbar extends React.Component {
                                 Pages
                             </p>
                         </li>
-                        {/* <li className='desktop-only nav-item'>
+                        <li className='mobile-only nav-item'>
                             <a 
                                 href='/' 
                                 className='nav-link m-2 menu-item'
                             >Home</a>
-                        </li> */}
+                        </li>
                         <li className='nav-item'>
                             <a 
                                 href='/about' 

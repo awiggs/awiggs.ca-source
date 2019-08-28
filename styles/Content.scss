@@ -1,7 +1,22 @@
 .content-container {
     h1:first-of-type {
-        text-align: center;
-        font-family: 'Dancing Script', sans-serif;
+        text-align: left;
         font-size: 5rem;
+    }
+}
+
+// Container Spacing
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1040px;
+    }
+}
+
+// Mobile
+@media screen and (max-width: $mobile-width) {
+    .content-container {
+        h1:first-of-type {
+            font-size: 3rem;
+        }
     }
 }

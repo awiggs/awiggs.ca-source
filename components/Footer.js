@@ -14,13 +14,13 @@ class Footer extends React.Component {
                         <div className='col-sm-2'>
                             <h5>Pages</h5>
                             <ul>
-                                {/* <li><a href='/'>Home</a></li> */}
+                                <li><a href='/'>Home</a></li>
                                 <li><a href='/about'>About</a></li>
                                 <li><a href='/work'>Work</a></li>
                             </ul>
                         </div>
                         <div className='col-sm-2'>
-                            <h5>Find Me On</h5>
+                            <h5>Connect With Me</h5>
                             <ul>
                                 <li><a href={Vars.github}><i className='fab fa-github'></i> GitHub</a></li>
                                 <li><a href={Vars.instagram}><i className='fab fa-instagram'></i> Instagram</a></li>
@@ -28,10 +28,10 @@ class Footer extends React.Component {
                             </ul>
                         </div>
                         <div className='col-sm-3'>
-                            <h5>Contact Me</h5>
+                            <h5>Contact</h5>
                             <ul>
                                 {/* <li><a href='#'><i className='fas fa-phone'></i> (250) 732-6138</a></li> */}
-                                <li><a href='#'><i className='far fa-envelope'></i> andrew@awiggs.ca</a></li>
+                                <li><a href='#'><i className='far fa-envelope'></i> xandrewwiggins@gmail.com</a></li>
                                 <li><a href='#'><i className='fas fa-download'></i> Resume</a></li>
                             </ul>
                         </div>
