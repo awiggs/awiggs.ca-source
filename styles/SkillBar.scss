@@ -2,11 +2,12 @@ $bar-height: 11px;
 $outer-bar: #fff;
 $inner-bar: $primary-logo;
 
+// General Skillbar CSS
 .skill-bar {
     box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
     background: $outer-bar;
     height: $bar-height;
-    width: 20%;
+    width: 55%;
     margin-bottom: 1rem;
 }
 
@@ -132,9 +133,9 @@ $inner-bar: $primary-logo;
     }
   }
 
-// Web
+// Mobile
 @media screen and (max-width: $mobile-width) {
     .skill-bar {
-        width: 100%;
+        width: 90%;
     }
 }

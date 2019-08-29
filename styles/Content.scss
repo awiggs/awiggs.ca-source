@@ -16,7 +16,17 @@
 @media screen and (max-width: $mobile-width) {
     .content-container {
         h1:first-of-type {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
     }
+}
+
+// -- About Page --
+.headshot-box {
+    text-align: center;
+    background: $foreground;
+}
+
+.about-headshot {
+    width: 35vh;
 }

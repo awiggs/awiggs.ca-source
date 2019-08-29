@@ -110,6 +110,11 @@
   animation: slide-right 1s ease-in 1;
 }
 
+// About Animations
+.about-headshot {
+  animation: hideshow 3s ease-in 1;
+}
+
 // Work Animations
 .work {
   animation: hideshow 1s ease-in 1;
