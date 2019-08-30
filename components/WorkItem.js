@@ -11,6 +11,9 @@ class WorkItem extends React.Component {
         var text = document.getElementById('chipgr8-text');
         // text.classList.toggle('hide');
         text.classList.toggle('slide-work-text');
+
+        document.getElementById('mono').classList.toggle('hide');
+        document.getElementById('color').classList.toggle('hide');
     }
 
     render() {
@@ -22,7 +25,8 @@ class WorkItem extends React.Component {
                         <h3 className='work-subtitle'>Application</h3>
                     </div>
                     <div className='work-pic d-inline-block'>
-                        <img className='work-pic-svg' src='../static/svg/chipgr8-mono.svg' />
+                        <img id='mono' className='work-pic-svg' src='../static/svg/chipgr8-mono.svg' />
+                        <img id='color' className='work-pic-svg hide' src='../static/svg/chipgr8.svg' />
                     </div>
                     <div className='click-more d-block'>
                         <p className='d-inline-block'>Show more</p><i className='fas fa-arrow-down d-inline-block lm-arrow'></i>
