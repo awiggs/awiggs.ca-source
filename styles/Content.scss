@@ -32,3 +32,78 @@
 .about-headshot {
     width: 35vh;
 }
+
+// -- Work Page --
+.work-item {
+    background: $shade-2;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 25px;
+    z-index: 10000;
+    box-shadow: $shadow-sm;
+}
+
+.work-title {
+    padding-left: 32px;
+    padding-right: 20vh;
+
+    h2 {
+        font-size: 3.5rem;
+        padding-top: 32px;
+    }
+
+    .work-subtitle {
+        color: $primary-logo;
+    }
+}
+
+.click-more {
+    color: $shade-5;
+    padding-left: 32px;
+    margin-top: 9vh;
+
+    .lm-arrow {
+        padding-left: 10px;
+    }
+}
+
+.work-pic {
+    height: 100%;
+    float: right;
+    padding-right: 10vh;
+    text-align: right;
+
+    .work-pic-svg {
+        height: 100%;
+    }
+}
+
+@keyframes slide {
+    0% {
+      -webkit-transform: translateY(-125px);
+              transform: translateY(-125px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+}
+@keyframes hideshow {
+    0% { opacity: 0; }
+    10% { opacity: 0; }
+    60% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+.work-text {
+    opacity: 0;
+    max-height: 0px;
+    transition: all 0.4s ease-out 0s;
+}
+
+.slide-work-text {
+    opacity: 1;
+    max-height: 100%;
+    transition: all 0.8s ease-out .1s;
+    // animation: hideshow 1.3s ease-in 1;
+}

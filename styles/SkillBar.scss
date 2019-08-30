@@ -4,7 +4,8 @@ $inner-bar: $primary-logo;
 
 // General Skillbar CSS
 .skill-bar {
-    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+    // box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+    box-shadow: $shadow-sm;
     background: $outer-bar;
     height: $bar-height;
     width: 55%;

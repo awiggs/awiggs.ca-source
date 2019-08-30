@@ -47,6 +47,13 @@ p {
     display: none !important;
 }
 
+.no-select {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
 @media screen and (max-width: $mobile-width) {
     .mobile-only {
         display: flex !important;
@@ -64,6 +71,7 @@ p {
 // Load Stylings
 @import './Animations.scss';
 @import './Availability.scss';
+@import './Button.scss';
 @import './Content.scss';
 @import './Home.scss';
 @import './Footer.scss';
@@ -75,3 +83,4 @@ p {
 @import './Logos.scss';
 @import './Spacer.scss';
 @import './hamburgers/_sass/hamburgers/hamburgers.scss';
+// @import './scss/hover.scss';

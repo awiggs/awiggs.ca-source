@@ -1,21 +1,39 @@
 import React from 'react';
-import Logos from './Logos'
+import ChipGr8 from '../content/chipgr8.mdx';
 
-function WorkItem({link, srcName, title, summary}) {
-    return (
-        <div className='work-item-container container mx-auto'>
-            <a href={link} target='_blank' className='work-item'>
-                <div className='svg-container'>
-                    <img className='expand' src={'../static/svg/' + srcName + '-mono.svg'} height='175' width='175' />
-                    <img className='contract' src={'../static/svg/' + srcName +'.svg'} height='175' width='175' />
+class WorkItem extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    showText = () => {
+        console.log('Click!');
+        var text = document.getElementById('chipgr8-text');
+        // text.classList.toggle('hide');
+        text.classList.toggle('slide-work-text');
+    }
+
+    render() {
+        return (
+            <>
+                <div className='work-item hvr-float no-select' onClick={this.showText}>
+                    <div className='work-title d-inline-block'>
+                        <h2>Chip-Gr8</h2>
+                        <h3 className='work-subtitle'>Application</h3>
+                    </div>
+                    <div className='work-pic d-inline-block'>
+                        <img className='work-pic-svg' src='../static/svg/chipgr8-mono.svg' />
+                    </div>
+                    <div className='click-more d-block'>
+                        <p className='d-inline-block'>Show more</p><i className='fas fa-arrow-down d-inline-block lm-arrow'></i>
+                    </div>
                 </div>
-                <div className='summary'>
-                    <h2>{title}</h2>
-                    <p>{summary}</p>
+                <div id='chipgr8-text' className='work-text'>
+                    <ChipGr8 />
                 </div>
-            </a>
-        </div>
-    );
-}
+            </>
+        );        
+    }
+};
 
 export default WorkItem;
