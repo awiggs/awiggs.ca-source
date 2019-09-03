@@ -9,7 +9,7 @@
 
 .work-title {
     padding-left: 32px;
-    padding-right: 20vh;
+    // padding-right: 20vh;
 
     h2 {
         font-size: 3.5rem;
@@ -34,7 +34,7 @@
 .work-pic {
     height: 100%;
     float: right;
-    padding-right: 10vh;
+    padding-right: 7vh;
     text-align: right;
 
     .work-pic-svg {
@@ -72,6 +72,9 @@
     // animation: hideshow 1.3s ease-in 1;
 }
 
+// Card-specifc Style (Due to SVG sizes)
+
+
 // Mobile
 @media screen and (max-width: $mobile-width) {
     .work-item {
@@ -87,7 +90,6 @@
         text-align: inherit;
         padding: 0;
         float: none;
-        margin-top: -40px;
 
         .work-pic-svg {
             width: 70%;
@@ -97,5 +99,31 @@
 
     .click-more {
         display: none !important;
+    }
+
+    // Card-specifc Style (Due to SVG sizes)
+    #chipgr8-mono,
+    #chipgr8-color {
+        margin-top: -40px;
+    }
+
+    #reliable-mono,
+    #reliable-color {
+        margin-top: -35px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .work-title {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    // Card-specifc Style (Due to SVG sizes)
+    #chipgr8-mono,
+    #chipgr8-color {
+        height: 65%;
     }
 }
