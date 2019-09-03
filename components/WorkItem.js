@@ -1,5 +1,4 @@
 import React from 'react';
-import Content from '../content/awiggs.mdx';
 
 class WorkItem extends React.Component {
     constructor(props) {

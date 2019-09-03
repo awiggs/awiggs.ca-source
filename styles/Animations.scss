@@ -97,18 +97,21 @@
 // }
 
 // Home Animations
+.home {
+  animation: hideshow 0.5s ease-in 1;
+}
 // .home .content,
-.home .home-svg {
-  animation: slide-left 1s ease-in 1;
-}
+// .home .home-svg {
+//   animation: slide-left 1s ease-in 1;
+// }
 
-.home .home-socials {
-  animation: slide-up 1.1s ease-in 1;
-}
+// .home .home-socials {
+//   animation: slide-up 1.1s ease-in 1;
+// }
 
-.home .content {
-  animation: slide-right 1s ease-in 1;
-}
+// .home .content {
+//   animation: slide-right 1s ease-in 1;
+// }
 
 // About Animations
 .about-headshot {
@@ -117,5 +120,5 @@
 
 // Work Animations
 .work {
-  animation: hideshow 1s ease-in 1;
+  animation: hideshow 0.75s ease-in 1;
 }
