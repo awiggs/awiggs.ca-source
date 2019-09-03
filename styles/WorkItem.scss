@@ -103,14 +103,16 @@
 
     // Card-specifc Style (Due to SVG sizes)
     #chipgr8-mono,
-    #chipgr8-color {
+    #chipgr8-color,
+    #awiggs-mono,
+    #awiggs-color {
         margin-top: -40px;
     }
 
     #reliable-mono,
     #reliable-color {
         margin-top: -35px;
-        width: 100%;
+        // width: 100%;
     }
 }
 
