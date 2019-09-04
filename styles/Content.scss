@@ -8,7 +8,11 @@
 
 .home .content  h3:first-of-type {
     color: $primary-logo;
-}   
+}
+
+.about .content p strong{
+    font-weight: 300;
+}
 
 // Container Spacing
 @media (min-width: 1200px) {

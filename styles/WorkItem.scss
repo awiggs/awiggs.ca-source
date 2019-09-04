@@ -7,6 +7,10 @@
     box-shadow: $shadow-sm;
 }
 
+.work-item:hover {
+    cursor: pointer;
+}
+
 .work-title {
     padding-left: 32px;
     // padding-right: 20vh;
@@ -63,6 +67,16 @@
     opacity: 0;
     max-height: 0px;
     transition: all 0.4s ease-out 0s;
+    margin-bottom: 30px;
+
+    .btn {
+        background: $link;
+        color: $background !important;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+    }
 }
 
 .slide-work-text {

@@ -7,7 +7,7 @@ class Button extends React.Component {
 
     render() {
         return (
-            <a href={this.props.link} class='btn btn-dark' role='button' aria-pressed='true'>{this.props.text}</a>
+            <a href={this.props.link} className='btn btn-dark' role='button' aria-pressed='true'>{this.props.text}</a>
         );
     }
 };

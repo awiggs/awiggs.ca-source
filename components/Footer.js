@@ -31,7 +31,7 @@ class Footer extends React.Component {
                             <h5>Contact</h5>
                             <ul>
                                 {/* <li><a href='#'><i className='fas fa-phone'></i> (250) 732-6138</a></li> */}
-                                <li><a href='#'><i className='far fa-envelope'></i> hello@awiggs.ca</a></li>
+                                <li><a href='#'><i className='far fa-envelope'></i> awiggins@uvic.ca</a></li>
                                 <li><a href='#'><i className='fas fa-download'></i> Resume</a></li>
                             </ul>
                         </div>

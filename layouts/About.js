@@ -8,9 +8,9 @@ export default ({ pageName }) => {
     return (
         <>
             <Boot title={pageName}/>
-            <div className='page work'>
-                <Navbar page='work' />
-                <div className='content-container container'>
+            <div className='page about'>
+                <Navbar page='about' />
+                <div className='content container'>
                     <div className='row'>
                         <div className='col'>
                             <Content />
