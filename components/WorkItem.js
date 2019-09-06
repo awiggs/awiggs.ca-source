@@ -13,7 +13,7 @@ class WorkItem extends React.Component {
         document.getElementById(text).classList.toggle('slide-work-text');
         document.getElementById(mono).classList.toggle('hide');
         document.getElementById(color).classList.toggle('hide');
-        document.getElementById(anchor).scrollIntoView({behavior: 'smooth', block: 'nearest'});
+        document.getElementById(anchor).scrollIntoView({behavior: 'smooth'});
     }
 
     render() {
