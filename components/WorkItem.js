@@ -3,6 +3,9 @@ import React from 'react';
 class WorkItem extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            open: false
+        }
     }
 
     toggleText = (name) => {
@@ -14,6 +17,9 @@ class WorkItem extends React.Component {
         document.getElementById(mono).classList.toggle('hide');
         document.getElementById(color).classList.toggle('hide');
         document.getElementById(anchor).scrollIntoView({behavior: 'smooth'});
+        this.setState(prevState => ({
+            open: !prevState.open
+        }));
     }
 
     render() {
@@ -30,7 +36,8 @@ class WorkItem extends React.Component {
                         <img id={this.props.name + '-color'} className='work-pic-svg hide' src={'../static/svg/' + this.props.name + '.svg'} />
                     </div>
                     <div className='click-more d-block'>
-                        <p className='d-inline-block'>Show more</p><i className='fas fa-arrow-down d-inline-block lm-arrow'></i>
+                        <p className='d-inline-block'>{'Show ' + (this.state.open ? 'less' : 'more')}</p>
+                        <i className={'fas ' + (this.state.open ? 'fa-arrow-up' : 'fa-arrow-down') + ' d-inline-block lm-arrow'}></i>
                     </div>
                 </div>
                 <div id={this.props.name + '-text'} className='work-text'>
