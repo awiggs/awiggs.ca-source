@@ -10,7 +10,7 @@ export default ({ pageName }) => {
             <Boot title={pageName}/>
             <div className='page work'>
                 <Navbar page='work' />
-                <div className='content-container container'>
+                <div className='content container'>
                     <div className='row'>
                         <div className='col'>
                             <Content />
