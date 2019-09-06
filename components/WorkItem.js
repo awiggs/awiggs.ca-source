@@ -32,7 +32,7 @@ class WorkItem extends React.Component {
                 </div>
                 <div id={this.props.name + '-text'} className='work-text'>
                     {this.props.content}
-                    <a onClick={ () => this.toggleText(this.props.name) } className='btn' role='button' aria-pressed='true'>Collapse</a>
+                    {/* <a onClick={ () => this.toggleText(this.props.name) } className='btn' role='button' aria-pressed='true'>Collapse</a> */}
                 </div>
             </>
         );        

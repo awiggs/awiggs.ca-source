@@ -65,6 +65,7 @@
 
 .work-text {
     opacity: 0;
+    overflow-y: hidden;
     max-height: 0px;
     transition: all 0.4s ease-out 0s;
     margin-bottom: 30px;
@@ -81,6 +82,7 @@
 
 .slide-work-text {
     opacity: 1;
+    visibility: visible;
     max-height: 100%;
     transition: all 0.8s ease-out .1s;
     // animation: hideshow 1.3s ease-in 1;
