@@ -6,18 +6,21 @@ class WorkItem extends React.Component {
     }
 
     toggleText = (name) => {
-        var id = name + '-text';
-        var id2 = name + '-mono';
-        var id3 = name + '-color';
-        document.getElementById(id).classList.toggle('slide-work-text');
-        document.getElementById(id2).classList.toggle('hide');
-        document.getElementById(id3).classList.toggle('hide');
+        var text = name + '-text';
+        var mono = name + '-mono';
+        var color = name + '-color';
+        var anchor = name + '-anchor';
+        document.getElementById(text).classList.toggle('slide-work-text');
+        document.getElementById(mono).classList.toggle('hide');
+        document.getElementById(color).classList.toggle('hide');
+        document.getElementById(anchor).scrollIntoView({behavior: 'smooth'});
     }
 
     render() {
         return (
             <>
                 <div className='work-item hvr-float no-select' onClick={ () => this.toggleText(this.props.name) }>
+                    <a id={ this.props.name + '-anchor' } href={ '#' + this.props.name }></a>
                     <div className='work-title d-inline-block'>
                         <h2>{this.props.title}</h2>
                         <h3 className='work-subtitle'>{this.props.type}</h3>
@@ -32,7 +35,7 @@ class WorkItem extends React.Component {
                 </div>
                 <div id={this.props.name + '-text'} className='work-text'>
                     {this.props.content}
-                    {/* <a onClick={ () => this.toggleText(this.props.name) } className='btn' role='button' aria-pressed='true'>Collapse</a> */}
+                    <a onClick={ () => this.toggleText(this.props.name) } className='btn' role='button' aria-pressed='true'>Collapse</a>
                 </div>
             </>
         );        
