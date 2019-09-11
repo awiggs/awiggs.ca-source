@@ -158,3 +158,11 @@
         height: 65%;
     }
 }
+
+@media screen and (max-width: 768px) and (min-width: $mobile-width) {
+    .work-pic {
+        height: 85%;
+        padding-right: 2vh;
+        margin-top: -6rem;
+    }
+}
