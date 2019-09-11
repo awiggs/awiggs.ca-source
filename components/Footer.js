@@ -9,7 +9,7 @@ class Footer extends React.Component {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-sm-3'>
-                            <h2 className='logo'><a href='/'><Logos.WhiteLogo /></a></h2>
+                            {/* <h2 className='logo'><a href='/'><Logos.WhiteLogo /></a></h2> */}
                         </div>
                         <div className='col-sm-2'>
                             <h5>Pages</h5>
@@ -20,7 +20,7 @@ class Footer extends React.Component {
                             </ul>
                         </div>
                         <div className='col-sm-2'>
-                            <h5>Connect With Me</h5>
+                            <h5>Connect</h5>
                             <ul>
                                 <li><a href={Vars.github}><i className='fab fa-github'></i> GitHub</a></li>
                                 <li><a href={Vars.instagram}><i className='fab fa-instagram'></i> Instagram</a></li>

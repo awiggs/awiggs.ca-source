@@ -40,6 +40,25 @@
     border: none !important;
 }
 
+.logo-svg-top,
+.logo-svg-bot {
+    transition: all 1s;
+}
+
+#home-logo {
+    height: 70px;
+    width: 70px;
+
+    &:hover {
+        .logo-svg-top {
+            transform: translate(0, -75px);
+        }
+        .logo-svg-bot {
+            transform: translate(0, 75px);
+        }
+    }
+}
+
 .hamburger:hover,
 .hamburger:active,
 .hamburger:focus {
