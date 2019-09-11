@@ -71,7 +71,7 @@ class Navbar extends React.Component {
                         </li>
                         <li className='nav-item nav-button'>
                             <a 
-                                href='/' 
+                                href='/static/resources/website-resume.pdf' 
                                 className='nav-link m-2 menu-item'
                             ><i className='fas fa-download'></i>Resume</a>
                         </li>

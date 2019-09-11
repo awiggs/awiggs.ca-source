@@ -32,7 +32,7 @@ class Footer extends React.Component {
                             <ul>
                                 {/* <li><a href='#'><i className='fas fa-phone'></i> (250) 732-6138</a></li> */}
                                 <li><a href='#'><i className='far fa-envelope'></i> awiggins@uvic.ca</a></li>
-                                <li><a href='#'><i className='fas fa-download'></i> Resume</a></li>
+                                <li><a href='/static/resources/website-resume.pdf'><i className='fas fa-download'></i> Resume</a></li>
                             </ul>
                         </div>
                     </div>
