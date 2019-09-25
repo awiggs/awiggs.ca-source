@@ -3,3 +3,5 @@ This repository contains the source code of my portfolio website hosted at awigg
 
 # What's Inside?
 This website is a React application, utilizing the Next.js framework. It also uses Now to deploy.
+
+More to come for this README!
