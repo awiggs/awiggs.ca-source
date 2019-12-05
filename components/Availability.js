@@ -7,7 +7,7 @@ class Availability extends React.Component {
 
     render() {
         return (
-            <div className='availability'><span className='availability-dot'></span><p>{'Available ' + this.props.text}</p></div>
+            <div className='availability'><span className='availability-dot'></span><p>{'Unavailable ' + this.props.text}</p></div>
         );
     }
 };

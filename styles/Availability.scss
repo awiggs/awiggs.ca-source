@@ -1,5 +1,5 @@
 $available:     #61E984;
-$unavailabl:    #cc0011;
+$unavailable:   #cc0011;
 
 .availability {
     display: inline-block;
@@ -14,7 +14,7 @@ $unavailabl:    #cc0011;
 .availability-dot {
     height: 10px;
     width: 10px;
-    background-color: $available;
+    background-color: $unavailable;
     border-radius: 50%;
     display: inline-block;
 }
