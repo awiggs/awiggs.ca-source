@@ -20,7 +20,7 @@ export default ( { className }) => {
           <div className='soc-location'>
             <a>
               <i className='sm fas fa-map-marker-alt'></i>
-              <p className='icon-text'>Victoria, BC</p>
+              <p className='icon-text'>Vancouver, BC</p>
             </a>
           </div>
         </div>
