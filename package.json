@@ -13,7 +13,7 @@
     "@zeit/next-sass": "^1.0.1",
     "hamburgers": "^1.1.3",
     "hover.css": "^2.3.2",
-    "next": "^9.4.1",
+    "next": "^11.1.3",
     "node-sass": "^4.14.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
