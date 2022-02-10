@@ -14,7 +14,7 @@
     "hamburgers": "^1.1.3",
     "hover.css": "^2.3.2",
     "next": "^9.4.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "sass-loader": "^7.1.0",
